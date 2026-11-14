@@ -709,7 +709,8 @@ select option, select optgroup { background: #17130f; }
 @keyframes onda { to { transform: scale(1.6); opacity: 0; } }
 .zap-botao:hover { transform: scale(1.08) rotate(-8deg); }
 .zap-botao svg { width: 32px; height: 32px; stroke-width: 1.6; }
-.zap-balao { position: absolute; right: 74px; top: 50%; transform: translateY(-50%); white-space: nowrap; padding: 9px 14px; border-radius: 12px; background: #fff; color: #111; font: 600 14px var(--corpo); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); animation: balao 0.5s 3s both; pointer-events: none; }
+.zap-balao { position: absolute; right: 74px; top: 50%; transform: translateY(-50%); white-space: nowrap; padding: 9px 14px; border-radius: 12px; background: #fff; color: #111; font: 600 14px var(--corpo); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); animation: balao 0.5s 3s both, balao-some 0.5s 11s forwards; pointer-events: none; }
+@keyframes balao-some { to { opacity: 0; transform: translateY(-50%) translateX(10px); visibility: hidden; } }
 .zap-balao::after { content: ''; position: absolute; right: -6px; top: 50%; margin-top: -6px; border: 6px solid transparent; border-right: 0; border-left-color: #fff; }
 @keyframes balao { from { opacity: 0; transform: translateY(-50%) translateX(10px); } }
 .zap.zap-aberto .zap-balao, .zap.ja-viu .zap-balao { display: none; }

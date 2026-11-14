@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Barbearia Dias · Corte de respeito desde 2014</title>
+  <meta name="description" content="Barbearia Dias: agenda ao vivo com os barbeiros, cortes especiais e loja de pomadas, óleos e navalhas.">
+  <meta name="theme-color" content="#0d0b09">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230d0b09'/%3E%3Ctext x='32' y='44' font-family='Georgia' font-size='34' font-weight='bold' text-anchor='middle' fill='%23d4a24c'%3ED%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rye&family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="assets/css/estilo.css">
+  <script type="module" src="assets/js/app.js"></script>
+</head>
+<body>
+  <!-- ícones -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-casa" viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></symbol>
+      <symbol id="i-tesoura" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M8.1 8.1 20 20M8.1 15.9 20 4"/></symbol>
+      <symbol id="i-navalha" viewBox="0 0 24 24"><path d="M3 15 15 3l2 2-9 9"/><path d="m8 14 2 2-5 5-3-3z"/><path d="M17 5h4v2l-8 8"/></symbol>
+      <symbol id="i-usuarios" viewBox="0 0 24 24"><circle cx="9" cy="8" r="4"/><path d="M2 21a7 7 0 0 1 14 0"/><path d="M16 4a4 4 0 0 1 0 8M22 21a7 7 0 0 0-4-6.3"/></symbol>
+      <symbol id="i-usuario" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></symbol>
+      <symbol id="i-calendario" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></symbol>
+      <symbol id="i-sacola" viewBox="0 0 24 24"><path d="M5 7h14l-1 14H6z"/><path d="M9 10V6a3 3 0 0 1 6 0v4"/></symbol>
+      <symbol id="i-carrinho" viewBox="0 0 24 24"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.6 12.4a1 1 0 0 0 1 .8h9.7a1 1 0 0 0 1-.8L21 7H6"/></symbol>
+      <symbol id="i-relogio" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+      <symbol id="i-caixa" viewBox="0 0 24 24"><path d="M21 8 12 3 3 8v8l9 5 9-5z"/><path d="m3 8 9 5 9-5M12 13v8"/></symbol>
+      <symbol id="i-zap" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/><path d="M8.5 7.5c.3-.6.7-.6 1-.6h.6c.2 0 .5 0 .7.5l.9 2.1c.1.3 0 .5-.1.7l-.6.7c-.2.2-.2.4 0 .7a7.6 7.6 0 0 0 3.4 3c.3.1.5.1.7-.1l.8-.9c.2-.3.5-.3.7-.2l2 1c.3.1.5.3.5.5 0 .4-.1 1.3-.8 1.8-.6.5-1.6.9-2.9.5a12 12 0 0 1-6.5-5.6c-.8-1.5-.6-2.9.1-3.6z" fill="currentColor" stroke="none"/></symbol>
+      <symbol id="i-sair" viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/></symbol>
+      <symbol id="i-fechar" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
+      <symbol id="i-pino" viewBox="0 0 24 24"><path d="M12 22s7-6.3 7-12a7 7 0 0 0-14 0c0 5.7 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+      <symbol id="i-estrela" viewBox="0 0 24 24"><path d="m12 2 3 6.6 7.2.7-5.4 4.9 1.6 7.1L12 17.6 5.6 21.3l1.6-7.1L1.8 9.3 9 8.6z" fill="currentColor" stroke="none"/></symbol>
+      <symbol id="i-insta" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="m4 12 5 5L20 6"/></symbol>
+      <symbol id="i-mais" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+      <symbol id="i-menos" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+      <symbol id="i-lixo" viewBox="0 0 24 24"><path d="M3 6h18M8 6V4h8v2M6 6l1 15h10l1-15"/></symbol>
+      <symbol id="i-esq" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+      <symbol id="i-dir" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+      <symbol id="i-enviar" viewBox="0 0 24 24"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4z"/></symbol>
+      <symbol id="i-presente" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="4"/><path d="M5 12v9h14v-9M12 8v13M12 8S11 3 8 3a2.5 2.5 0 0 0 0 5zM12 8s1-5 4-5a2.5 2.5 0 0 1 0 5z"/></symbol>
+      <symbol id="i-escudo" viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5z"/><path d="m9 12 2 2 4-4"/></symbol>
+      <symbol id="i-busca" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></symbol>
+      <symbol id="i-moto" viewBox="0 0 24 24"><circle cx="5" cy="17" r="3"/><circle cx="19" cy="17" r="3"/><path d="M8 17h6l3-6h-4l-2-4H8M14 7h3l2 4"/></symbol>
+      <symbol id="i-loja" viewBox="0 0 24 24"><path d="M3 9 5 3h14l2 6M3 9h18v2a3 3 0 0 1-6 0 3 3 0 0 1-6 0 3 3 0 0 1-6 0zM5 13v8h14v-8M10 21v-5h4v5"/></symbol>
+    </defs>
+  </svg>
+
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- barra lateral -->
+  <aside class="lateral" id="lateral" aria-label="Menu principal">
+    <a class="lateral-logo" href="#inicio" aria-label="Barbearia Dias, início">
+      <span class="poste" aria-hidden="true"></span>
+      <span class="lateral-marca">Dias</span>
+    </a>
+    <nav class="lateral-nav">
+      <a href="#inicio" data-nav="inicio"><svg><use href="#i-casa"/></svg><span>Início</span></a>
+      <a href="#cortes" data-nav="cortes"><svg><use href="#i-tesoura"/></svg><span>Cortes</span></a>
+      <a href="#barbeiros" data-nav="barbeiros"><svg><use href="#i-usuarios"/></svg><span>Barbeiros</span></a>
+      <a href="#agenda" data-nav="agenda"><svg><use href="#i-calendario"/></svg><span>Agenda ao vivo</span></a>
+      <a href="#loja" data-nav="loja"><svg><use href="#i-loja"/></svg><span>Loja</span></a>
+      <button type="button" data-abrir="conta"><svg><use href="#i-relogio"/></svg><span>Meus horários</span></button>
+      <button type="button" data-abrir="pedidos"><svg><use href="#i-caixa"/></svg><span>Meus pedidos</span></button>
+      <button type="button" data-abrir="zap"><svg><use href="#i-zap"/></svg><span>Suporte</span></button>
+    </nav>
+    <div class="lateral-rodape">
+      <div class="aberto" id="aberto-agora"><i></i><span>…</span></div>
+      <button type="button" class="lateral-conta" id="btn-conta">
+        <span class="avatar" id="avatar-lateral"><svg><use href="#i-usuario"/></svg></span>
+        <span class="lateral-conta-texto"><b id="nome-lateral">Entrar</b><small id="sub-lateral">ou criar conta</small></span>
+      </button>
+    </div>
+  </aside>
+  <div class="lateral-fundo" id="lateral-fundo" hidden></div>
+
+  <!-- topo (celular) -->
+  <header class="topo">
+    <button type="button" class="icone-btn" id="abrir-menu" aria-label="Abrir menu" aria-controls="lateral" aria-expanded="false"><svg><use href="#i-menu"/></svg></button>
+    <a href="#inicio" class="topo-logo">Barbearia Dias</a>
+    <button type="button" class="icone-btn carrinho-btn" data-abrir="carrinho" aria-label="Abrir carrinho"><svg><use href="#i-sacola"/></svg><span class="bolinha" data-qtd-carrinho hidden>0</span></button>
+  </header>
+
+  <!-- ações fixas (computador) -->
+  <div class="acoes-fixas">
+    <button type="button" class="pilula" data-ir="agenda"><svg><use href="#i-calendario"/></svg>Agendar</button>
+    <button type="button" class="icone-btn carrinho-btn" data-abrir="carrinho" aria-label="Abrir carrinho"><svg><use href="#i-sacola"/></svg><span class="bolinha" data-qtd-carrinho hidden>0</span></button>
+  </div>
+
+  <main id="conteudo">
+    <!-- INÍCIO -->
+    <section class="hero" id="inicio">
+      <div class="hero-fundo" id="hero-fundo"></div>
+      <div class="hero-grao" aria-hidden="true"></div>
+      <div class="hero-conteudo">
+        <p class="hero-selo"><span>EST.</span> 2014 <span>· JOINVILLE</span></p>
+        <h1 class="hero-titulo">
+          <span class="hero-pre">Barbearia</span>
+          <span class="hero-nome">DIAS</span>
+        </h1>
+        <p class="hero-frase">Corte de respeito. Navalha afiada. Cadeira quente.</p>
+        <div class="hero-botoes">
+          <button type="button" class="btn btn-ouro" data-ir="agenda"><svg><use href="#i-calendario"/></svg>Agendar horário</button>
+          <button type="button" class="btn btn-linha" data-ir="loja"><svg><use href="#i-sacola"/></svg>Ver a loja</button>
+        </div>
+        <ul class="hero-ao-vivo" id="hero-ao-vivo" aria-live="polite"></ul>
+      </div>
+      <div class="hero-numeros">
+        <div><b data-contar="12480">0</b><span>cortes por ano</span></div>
+        <div><b>4,9<small>★</small></b><span>nota no Google</span></div>
+        <div><b data-contar="3">0</b><span>barbeiros na casa</span></div>
+        <div><b data-contar="12">0</b><span>anos de navalha</span></div>
+      </div>
+      <a href="#cortes" class="rolar" aria-label="Rolar para os cortes"><span></span></a>
+    </section>
+
+    <div class="faixa" aria-hidden="true">
+      <div class="faixa-trilho">
+        <span>Degradê</span><b>✂</b><span>Navalhado</span><b>✂</b><span>Freestyle</span><b>✂</b><span>Barba terapia</span><b>✂</b><span>Platinado</span><b>✂</b><span>Pigmentação</span><b>✂</b><span>Corte do patrão</span><b>✂</b>
+        <span>Degradê</span><b>✂</b><span>Navalhado</span><b>✂</b><span>Freestyle</span><b>✂</b><span>Barba terapia</span><b>✂</b><span>Platinado</span><b>✂</b><span>Pigmentação</span><b>✂</b><span>Corte do patrão</span><b>✂</b>
+      </div>
+    </div>
+
+    <!-- CORTES -->
+    <section class="secao" id="cortes">
+      <header class="secao-topo">
+        <p class="sobretitulo">Cardápio da casa</p>
+        <h2>Cortes &amp; serviços</h2>
+        <p class="secao-sub">Do social ao platinado. Escolha o serviço e a gente já leva você direto pra agenda.</p>
+      </header>
+      <div class="chips" id="filtro-servicos" role="tablist" aria-label="Filtrar serviços"></div>
+      <div class="servicos" id="lista-servicos"></div>
+    </section>
+
+    <!-- BARBEIROS -->
+    <section class="secao secao-escura" id="barbeiros">
+      <header class="secao-topo">
+        <p class="sobretitulo">Quem segura a navalha</p>
+        <h2>Os barbeiros</h2>
+        <p class="secao-sub">Situação de cada um atualizada ao vivo.</p>
+      </header>
+      <div class="barbeiros" id="lista-barbeiros"></div>
+    </section>
+
+    <!-- AGENDA -->
+    <section class="secao" id="agenda">
+      <header class="secao-topo">
+        <p class="sobretitulo"><span class="ao-vivo"><i></i>Ao vivo</span></p>
+        <h2>Agenda</h2>
+        <p class="secao-sub">Veja como está o dia de cada barbeiro e marque seu horário. <span class="atualizado" id="atualizado">Atualizado agora</span></p>
+      </header>
+
+      <div class="hoje">
+        <div class="hoje-topo">
+          <h3>Hoje na Dias <small id="hoje-data"></small></h3>
+          <div class="legenda"><span class="l-ocupado">Ocupado</span><span class="l-livre">Livre</span><span class="l-agora">Agora</span></div>
+        </div>
+        <div class="linha-tempo" id="linha-tempo"></div>
+      </div>
+
+      <div class="marcar">
+        <div class="marcar-passos">
+          <div class="passo">
+            <span class="passo-num">1</span>
+            <div>
+              <h3>Barbeiro</h3>
+              <div class="escolha-barbeiro" id="escolha-barbeiro" role="radiogroup" aria-label="Barbeiro"></div>
+            </div>
+          </div>
+          <div class="passo">
+            <span class="passo-num">2</span>
+            <div class="passo-largo">
+              <h3>Serviço</h3>
+              <label class="select">
+                <select id="escolha-servico" aria-label="Serviço"></select>
+              </label>
+              <p class="dica" id="dica-servico"></p>
+            </div>
+          </div>
+          <div class="passo">
+            <span class="passo-num">3</span>
+            <div>
+              <h3>Dia e horário</h3>
+              <p class="dica">Clique no calendário para abrir. Depois escolha o dia e veja os horários livres.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="calendario-lugar" id="calendario-lugar">
+          <div class="calendario" id="calendario" tabindex="0" role="button" aria-label="Abrir calendário">
+            <button type="button" class="cal-fechar icone-btn" id="cal-fechar" aria-label="Fechar calendário"><svg><use href="#i-fechar"/></svg></button>
+            <div class="cal-lado">
+              <div class="cal-cabeca">
+                <button type="button" class="icone-btn" id="cal-ant" aria-label="Mês anterior"><svg><use href="#i-esq"/></svg></button>
+                <h3 id="cal-mes"></h3>
+                <button type="button" class="icone-btn" id="cal-prox" aria-label="Próximo mês"><svg><use href="#i-dir"/></svg></button>
+              </div>
+              <div class="cal-semana"><span>Dom</span><span>Seg</span><span>Ter</span><span>Qua</span><span>Qui</span><span>Sex</span><span>Sáb</span></div>
+              <div class="cal-dias" id="cal-dias"></div>
+              <div class="cal-legenda"><span><i class="q-alta"></i>Bastante vaga</span><span><i class="q-media"></i>Enchendo</span><span><i class="q-baixa"></i>Últimas vagas</span><span><i class="q-zero"></i>Lotado / folga</span></div>
+              <p class="cal-toque" aria-hidden="true">Toque para abrir</p>
+            </div>
+            <div class="cal-horarios" id="cal-horarios" aria-live="polite">
+              <div class="vazio">
+                <svg><use href="#i-calendario"/></svg>
+                <p>Escolha um dia para ver os horários livres.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOJA -->
+    <section class="secao secao-escura" id="loja">
+      <header class="secao-topo">
+        <p class="sobretitulo">Leva a barbearia pra casa</p>
+        <h2>Loja da Dias</h2>
+        <p class="secao-sub">Os mesmos produtos que a gente usa na cadeira. Retire na barbearia ou receba em casa.</p>
+      </header>
+      <div class="loja-barra">
+        <div class="chips" id="filtro-produtos" role="tablist" aria-label="Filtrar produtos"></div>
+        <label class="busca"><svg><use href="#i-busca"/></svg><input type="search" id="busca-produto" placeholder="Buscar produto" aria-label="Buscar produto"></label>
+      </div>
+      <div class="produtos" id="lista-produtos"></div>
+    </section>
+
+    <!-- PATROCÍNIO -->
+    <section class="parceiros" aria-label="Parceiros">
+      <p>Parceiros da casa</p>
+      <div class="parceiros-trilho" id="parceiros"></div>
+    </section>
+
+    <footer class="rodape">
+      <div class="rodape-col">
+        <p class="rodape-logo">Barbearia Dias</p>
+        <p class="rodape-texto">Corte de respeito desde 2014. Café passado na hora, cerveja gelada e conversa boa.</p>
+        <a class="rodape-insta" href="#" aria-label="Instagram da barbearia"><svg><use href="#i-insta"/></svg>@barbeariadias</a>
+      </div>
+      <div class="rodape-col">
+        <h4>Onde fica</h4>
+        <p><svg><use href="#i-pino"/></svg><span id="endereco"></span></p>
+      </div>
+      <div class="rodape-col">
+        <h4>Horários</h4>
+        <ul class="horarios-lista" id="horarios-lista"></ul>
+      </div>
+      <p class="rodape-fim">Projeto de demonstração. Contas, agendamentos e pedidos ficam salvos só no seu navegador. Fotos: <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a>.</p>
+    </footer>
+  </main>
+
+  <!-- CARRINHO -->
+  <aside class="gaveta" id="carrinho" aria-label="Carrinho" hidden>
+    <div class="gaveta-topo">
+      <h3><svg><use href="#i-sacola"/></svg>Seu carrinho</h3>
+      <button type="button" class="icone-btn" data-fechar aria-label="Fechar carrinho"><svg><use href="#i-fechar"/></svg></button>
+    </div>
+    <div class="gaveta-corpo" id="carrinho-itens"></div>
+    <div class="gaveta-pe" id="carrinho-pe"></div>
+  </aside>
+
+  <!-- MODAL genérico (login, checkout, conta, patrocínio...) -->
+  <div class="modal-fundo" id="modal-fundo" hidden>
+    <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-titulo"></div>
+  </div>
+
+  <!-- CALENDÁRIO em foco -->
+  <div class="foco-fundo" id="foco-fundo" hidden></div>
+
+  <!-- WHATSAPP -->
+  <div class="zap" id="zap">
+    <div class="zap-janela" id="zap-janela" hidden role="dialog" aria-label="Suporte pelo WhatsApp">
+      <div class="zap-topo">
+        <span class="zap-avatar">D</span>
+        <div><b>Barbearia Dias</b><small><i></i>online · responde em minutos</small></div>
+        <button type="button" class="icone-btn" id="zap-fechar" aria-label="Fechar"><svg><use href="#i-fechar"/></svg></button>
+      </div>
+      <div class="zap-conversa" id="zap-conversa">
+        <div class="zap-msg">Fala, campeão! 👊 Dúvida sobre horário, corte ou pedido da loja? Escreve aqui que a mensagem vai direto pro nosso WhatsApp.<time></time></div>
+      </div>
+      <div class="zap-atalhos" id="zap-atalhos">
+        <button type="button">Quero remarcar meu horário</button>
+        <button type="button">Vocês atendem hoje?</button>
+        <button type="button">Dúvida sobre meu pedido</button>
+      </div>
+      <form class="zap-form" id="zap-form">
+        <textarea id="zap-texto" rows="1" maxlength="500" placeholder="Escreva sua mensagem" aria-label="Mensagem"></textarea>
+        <button type="submit" aria-label="Enviar pelo WhatsApp"><svg><use href="#i-enviar"/></svg></button>
+      </form>
+    </div>
+    <button type="button" class="zap-botao" id="zap-botao" aria-label="Falar no WhatsApp" aria-expanded="false">
+      <svg><use href="#i-zap"/></svg>
+      <span class="zap-balao">Precisa de ajuda?</span>
+    </button>
+  </div>
+
+  <div class="avisos" id="avisos" aria-live="polite"></div>
+</body>
+</html>

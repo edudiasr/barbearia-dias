@@ -1,0 +1,14 @@
+{
+  "name": "barbearia-dias",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site de barbearia com agenda ao vivo, contas, loja e checkout. HTML, CSS e JavaScript puro.",
+  "type": "module",
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}

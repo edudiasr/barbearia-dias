@@ -6,7 +6,7 @@ const foto = (id, w = 640, h = 640) =>
 
 export const CONFIG = {
   nome: 'Barbearia Dias',
-  whatsapp: '5511900000000', // troque pelo número real (DDI + DDD + número)
+  whatsapp: '5547992072891', // DDI + DDD + número
   endereco: 'Rua Imaginária, 22 · Centro · Joinville/SC',
   instagram: 'barbeariadias',
   // 0 = domingo ... 6 = sábado
